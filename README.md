@@ -25,15 +25,15 @@ After installing BepInEx drop `CustomWeapons.dll` into the `BepInEx/plugins/` fo
 ## Usage
 In game after loading into a save you can press `F7` and `F8` to switch between your weapons.
 
-If you have a debug version of the plugin you can use `F9` to dump the curret scene.
+If you have a debug version of the plugin you can use `F9` to dump the curret scene and `F10` to hide/unhide the default weapon.
 
 ## Creating weapons
 Creating weapons is very simple if you're familiar with Unity and 3D modeling. 
 
 ### Unity
-You will need to use [Unity 5.6.0f3](). If you already have another version, you can install multiple versions at the same time by changing the install folder. 
+You will need to use [Unity 5.6.0f3](https://download.unity3d.com/download_unity/497a0f351392/Windows64EditorInstaller/UnitySetup64-5.6.0f3.exe). If you already have another version, you can install multiple versions at the same time by changing the install folder. 
 
-Make sure you target `.Net 2.0.0`, by going to `Edit` -> `Project Settings` -> `Player` -> `Other Settings` -> `Configration`
+Make sure you target `.Net 2.0.0`, by going to `Edit` -> `Project Settings` -> `Player` -> `Other Settings` -> `Configration`.
 
 ### Project
 Once you have the correct version of unity installed, create/open a project and install this [`.unitypackage`](https://nobeta.moe/files/CustomWeapons.unitypackage) into it.
