@@ -9,6 +9,7 @@
   * [Unity](#Unity)
   * [Project](#Project)
 * [Installing weapons](#Installing-weapons)
+* [Contact me](#Contact-me)
 
 
 ## Installing
@@ -66,3 +67,8 @@ The exporter will prompt you to save a `.weapon` file.
 ## Installing weapons
 You can drop that weapon file inside `Custom/Weapons/` in your game's root folder.
 You will need to restart to reload new weapons, this is planned to change.
+
+## Contact me
+If you have bugs or suggestions you can make an issue.
+If you want to help develop mods for Nobeta or need help, feel free to message me on Discord: `Assistant#8431`.
+However, I'll be quite upset if you want to use me as a replacement for [Google](https://google.com).
