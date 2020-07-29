@@ -57,9 +57,7 @@ It should look like this:
   * Weapon
     * \<Your Model Here\>
 
-:::warning
-Note: scripts won't work unless they're compiled into this plugin, or into the game.
-:::
+**Note: scripts won't work unless they're compiled into this plugin, or into the game.**
 
 After you're done and happy with your weapon, export it using the `Weapon Export` window. You can find it at `Window` -> `Weapon Exporter`. 
 The exporter will prompt you to save a `.weapon` file.
