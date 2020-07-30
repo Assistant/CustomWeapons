@@ -44,6 +44,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Custom Weapons\DynamicBones\DynamicBone.cs" />
+    <Compile Include="..\Custom Weapons\DynamicBones\DynamicBoneCollider.cs" />
+    <Compile Include="..\Custom Weapons\DynamicBones\DynamicBoneColliderBase.cs" />
+    <Compile Include="..\Custom Weapons\DynamicBones\DynamicBonePlaneCollider.cs" />
     <Compile Include="..\Custom Weapons\WeaponDescriptor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
