@@ -57,10 +57,10 @@ namespace Custom_Weapons
 #endif
             if (firstRun && next.name != "ShowLogo" && next.name != "Title")
             {
-                firstRun = false;
                 Logger.LogInfo("Initiating weapons");
                 GetObjects();
                 LoadWeapons();
+                firstRun = false;
             }
         }
 
@@ -129,6 +129,11 @@ namespace Custom_Weapons
         {
             if (Input.GetKeyDown(KeyCode.F7))
             {
+                if (firstRun)
+                {
+                    Logger.LogWarning("You need to load a game first!");
+                    return;
+                }
                 if (CustomWeapons.Count < 2)
                 {
                     Logger.LogWarning("You don't have any custom weapons!");
@@ -139,6 +144,11 @@ namespace Custom_Weapons
             }
             if (Input.GetKeyDown(KeyCode.F8))
             {
+                if (firstRun)
+                {
+                    Logger.LogWarning("You need to load a game first!");
+                    return;
+                }
                 if (CustomWeapons.Count < 2)
                 {
                     Logger.LogWarning("You don't have any custom weapons!");
