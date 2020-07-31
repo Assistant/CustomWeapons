@@ -29,8 +29,12 @@ namespace Custom_Weapons
                 try
                 {
                     AssetBundle = AssetBundle.LoadFromFile(filename);
+                    Object.DontDestroyOnLoad(AssetBundle);
                     Weapon = AssetBundle.LoadAsset<GameObject>("_CustomWeapon");
+                    Weapon.SetActive(false);
+                    Object.DontDestroyOnLoad(Weapon);
                     Descriptor = Weapon.GetComponent<WeaponDescriptor>();
+                    Object.DontDestroyOnLoad(Descriptor);
                 }
                 catch
                 {
