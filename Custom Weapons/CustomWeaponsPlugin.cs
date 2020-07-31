@@ -31,10 +31,6 @@ namespace Custom_Weapons
             CurrentWeaponName = Config.Bind("_data", "CurrentWeaponName", "_default", new ConfigDescription("", null, new ConfigurationManagerAttributes { Browsable = false }));
             PreviousWeapon = Config.Bind("Keybinds", "PreviousWeapon", new KeyboardShortcut(KeyCode.F7), "Key to switch to the previous weapon");
             NextWeapon = Config.Bind("Keybinds", "NextWeapon", new KeyboardShortcut(KeyCode.F8), "Key to switch to the next weapon");
-            foreach (KeyCode key in KeyboardShortcut.AllKeyCodes)
-            {
-                Logger.LogMessage($"Key: {key}");
-            }
         }
 
         void GetObjects()
