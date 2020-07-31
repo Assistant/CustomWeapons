@@ -28,7 +28,7 @@ namespace Custom_Weapons
         {
             Logger.LogInfo("Cunny!");
             UnitySceneManager.sceneLoaded += OnSceneLoaded;
-            CurrentWeaponName = Config.Bind("Data", "CurrentWeaponName", "_default", "Saves the weapon you last used. Do not edit.");
+            CurrentWeaponName = Config.Bind("_data", "CurrentWeaponName", "_default", new ConfigDescription("", null, new ConfigurationManagerAttributes { Browsable = false }));
             PreviousWeapon = Config.Bind("Keybinds", "PreviousWeapon", new KeyboardShortcut(KeyCode.F7), "Key to switch to the previous weapon");
             NextWeapon = Config.Bind("Keybinds", "NextWeapon", new KeyboardShortcut(KeyCode.F8), "Key to switch to the next weapon");
             foreach (KeyCode key in KeyboardShortcut.AllKeyCodes)
@@ -90,8 +90,7 @@ namespace Custom_Weapons
                 string CustomWeaponsDir = $"{Application.dataPath.Substring(0, Application.dataPath.LastIndexOf('/'))}/Custom/Weapons/";
                 if (!Directory.Exists(CustomWeaponsDir)) Directory.CreateDirectory(CustomWeaponsDir);
                 Logger.LogInfo($"Weapons directory: {CustomWeaponsDir}");
-                CustomWeaponData _default = new CustomWeaponData("_default");
-                _default.Weapon = Weapon;
+                CustomWeaponData _default = new CustomWeaponData("_default"){ Weapon = Weapon };
                 CustomWeapons.Add(_default);
 
                 string[] _weaponFiles = Directory.GetFiles(CustomWeaponsDir, "*.weapon", SearchOption.AllDirectories);
